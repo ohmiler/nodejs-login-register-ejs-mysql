@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+
+
+    <div class="register-container">
+        <h2>Register</h2>
+
+        <!-- Display success or error message -->
+        <% if (typeof success_msg !== 'undefined') { %>
+            <p style="color: green;"><%= success_msg %></p>
+        <% } %>
+    
+         <% if (typeof error_msg !== 'undefined') { %>
+            <p style="color: red;"><%= error_msg %></p>
+        <% } %>
+
+        <form action="/register" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <div class="register-links">
+            <a href="/login">Go to login</a></a>
+        </div>
+    </div>
+    
+</body>
+</html>
