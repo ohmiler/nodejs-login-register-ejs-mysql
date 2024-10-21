@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
@@ -12,16 +15,16 @@
         </div>
 
         <ul class="menu">
-            <li>
-                <a href="/logout" class="login-btn">Logout</a>
-            </li>
+            <li><a href="/">Index</a></li>
+            <li><a href="/logout" class="logout-btn">Logout</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <% if (typeof user !== 'undefined') { %>
             <h1>Hello, <%= user.name %></h1>
-            <p>Welcome to the Home Page</p>
+            <p>Email : <%= user.email %></p>
+            <p>Welcome to the home page</p>
         <% } %>
     </div>
     

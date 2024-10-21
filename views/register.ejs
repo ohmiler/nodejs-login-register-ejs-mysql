@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Register</title>
-    <link rel="stylesheet" href="/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
     <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
-
 
     <div class="register-container">
         <h2>Register</h2>
@@ -15,20 +16,19 @@
         <% if (typeof success_msg !== 'undefined') { %>
             <p style="color: green;"><%= success_msg %></p>
         <% } %>
-    
-         <% if (typeof error_msg !== 'undefined') { %>
+        <% if (typeof error_msg !== 'undefined') { %>
             <p style="color: red;"><%= error_msg %></p>
         <% } %>
 
         <form action="/register" method="POST">
-            <input type="text" name="name" placeholder="Name" required>
-            <input type="email" name="email" placeholder="Email" required>
-            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="name" placeholder="Enter your name">
+            <input type="email" name="email" placeholder="Enter your email">
+            <input type="password" name="password" placeholder="Enter your password">
             <button type="submit">Register</button>
         </form>
 
-        <div class="register-links">
-            <a href="/login">Go to login</a></a>
+        <div class="register-link">
+            <a href="/login">Go to login</a>
         </div>
     </div>
     

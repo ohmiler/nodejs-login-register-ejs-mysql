@@ -15,9 +15,8 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #222;
-    padding: 1rem 5rem;
+    padding: 1rem 2rem;
     align-items: center;
-
 
     .logo {
         a {
@@ -31,7 +30,7 @@ nav {
         align-items: center;
         list-style: none;
 
-        li {    
+        li {
             margin-left: 1rem;
 
             a {
@@ -40,11 +39,15 @@ nav {
             }
 
             .login-btn {
-                color: #fff;
-                text-decoration: none;
-                background-color: crimson;
-                display: flex;
+                background-color: green;
                 padding: 0.5rem;
+                border-radius: 5px;
+            }
+
+            .logout-btn {
+                background-color: red;
+                padding: 0.5rem;
+                border-radius: 5px;
             }
         }
     }

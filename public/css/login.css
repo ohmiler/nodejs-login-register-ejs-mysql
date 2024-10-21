@@ -1,11 +1,11 @@
-/* public/css/login.css */
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,61 +17,51 @@ h2 {
     color: #333;
 }
 
-/* Login Form Container */
 .login-container {
     width: 100%;
     max-width: 400px;
-    background-color: white;
+    background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+    border-radius: 10px;
 
-/* Input Fields */
-input[type="email"],
-input[type="password"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
+    form {
 
-/* Button */
-button {
-    width: 100%;
-    padding: 10px;
-    background-color: #5cb85c;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-button:hover {
-    background-color: #4cae4c;
-}
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #5cb85c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
 
-/* Error or Success Message */
-.message {
-    text-align: center;
-    margin-bottom: 15px;
-    color: red;
-}
+            &:hover {
+                background-color: #4cae4c;
+            }
+        }
+    }
 
-/* Links */
-.login-links {
-    text-align: center;
-    margin-top: 10px;
-}
+    .login-link {
+        text-align: center;
+        margin-top: 10px;
 
-.login-links a {
-    color: #5cb85c;
-    text-decoration: none;
-}
+        a {
+            color: #5cb85c;
+            text-decoration: none;
 
-.login-links a:hover {
-    text-decoration: underline;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }
